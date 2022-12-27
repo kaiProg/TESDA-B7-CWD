@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- material icon init -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- css file -->
+    <link rel="stylesheet" href="/style.css">
+    <title>About Me</title>
+</head>
+<body>
+    <!-- navigation bar -->
+    <header class="main-header">
+        <nav class="transparent">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="/index.html" class="brand-logo">KDServices</a>
+                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li class="active">
+                            <a href="/index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about-me.html">About Me</a>
+                        </li>
+                        <li>
+                            <a href="services.html">Services</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="contact-me.html">Contact Me</a>
+                        </li>
+                        <li>
+                            <a href="add-appointment.html">Set Appointment</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br>
+
+    <!-- content -->
+    <div class="container">
+        <div class="row">
+            <div class="col s6 white-text center">
+                <img src="/images/about-me.png" alt="sushi" class="responsive-img">
+            </div>
+            <div class="col s6 black-text">
+                <h1 class="black-text">About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, beatae. Ipsum doloremque deleniti iure laborum et dolorum nostrum perferendis recusandae voluptates repellendus quos repellat qui, mollitia, molestias totam sed. Eos?</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">KDServices</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="/index.html">Home</a></li>
+                    <li><a class="grey-text text-lighten-3" href="about-me.html">About Me</a></li>
+                    <li><a class="grey-text text-lighten-3" href="services.html">Services</a></li>
+                    <li><a class="grey-text text-lighten-3" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="grey-text text-lighten-3" href="contact-me.html">Contact Me</a></li>
+                    <li><a class="grey-text text-lighten-3" href="add-appointment.html">Set Appointment</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center">
+            © 2022 Kaide Torda
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Minified jQuerry CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    </script>
+    <!-- jQuerry inits -->
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+
+            $('.slider').slider({
+                indicators: true,
+                duration: 200,
+                interval: 1300
+            });
+        });
+    </script>
+
+</body>
+</html>
